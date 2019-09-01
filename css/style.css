@@ -6,12 +6,16 @@
 }
 
 body {
-    max-width: 1600px;
-    margin: 0 auto;
+    /* max-width: 1600px;
+    margin: 0 auto; */
 
 
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
+}
+
+.container {
+    position: relative;
 }
 
 .wrapper {
@@ -35,7 +39,7 @@ img {
 
 .img4 {
 
-
+    /* widows: 100vw; */
     filter: brightness(2.24) hue-rotate(199deg) invert(0.25);
     -webkit-filter: brightness(2.24) hue-rotate(199deg) invert(0.25);
 
@@ -67,7 +71,7 @@ img {
 }
 
 .intro {
-    position: fixed;
+    position: absolute;
     top: 30%;
     left: 10%;
     right: 15%;
@@ -89,7 +93,7 @@ img {
 }
 
 .foot {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     overflow-x: hidden;
@@ -301,15 +305,16 @@ a {
         font-size: 160px;
     }
 
-    #aboutMe {
-        font-size: 42px;
-        width: 40%;
-        left: 30%;
-    }
+    /* #aboutMe {
+        font-size: 300%;
+        /* width: 40%;
+        left: 30%; */
+}
 
-    .intro {
+*/
+/* .intro {
 
         width: 35%;
-    }
+    } */
 
 }
