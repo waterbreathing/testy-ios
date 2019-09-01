@@ -99,9 +99,9 @@ img {
     overflow-x: hidden;
     opacity: 0;
     /* transition: opacity .55s; */
-    -webkit-transition: opacity 0.38s ease-out;
-    -o-transition: opacity 0.38s ease-out;
-    transition: opacity 0.38s ease-out;
+    -webkit-transition: opacity 0.48s ease-out;
+    -o-transition: opacity 0.48s ease-out;
+    transition: opacity 0.48s ease-out;
 
     -webkit-box-shadow: 0px -25px 43px -22px rgba(23, 37, 143, 1);
     box-shadow: 0px -25px 43px -22px rgba(23, 37, 143, 1);
@@ -113,7 +113,7 @@ img {
 
 .showFoot {
 
-
+    width: 100%;
     opacity: 1;
 }
 
@@ -171,6 +171,8 @@ img {
     font-size: 140%;
 
     position: absolute;
+    /* left: 100%;
+    top: 100%; */
 
 
     background-color: rgba(255, 208, 0, 0.199);
@@ -296,25 +298,19 @@ a {
 }
 
 @media (min-width:3000px) {
-    img {
+    /* img {
         width: 130%;
-    }
+    } */
 
     .fab,
     .fas {
-        font-size: 160px;
+        font-size: 150%;
     }
+
+
 
     /* #aboutMe {
         font-size: 300%;
-        /* width: 40%;
-        left: 30%; */
-}
-
-*/
-/* .intro {
-
-        width: 35%;
     } */
 
 }

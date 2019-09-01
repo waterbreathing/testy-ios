@@ -1,5 +1,5 @@
 
-let offsetImg1 = $('.image1').offset().left;
+let offsetImg1 = $('.image1').offset().left; //skasuj to
 const widthImg1 = $('.image1').width();
 let windowWidth = $(window).width();
 const naviHeight = $('.navi').outerHeight() + 60;
@@ -12,11 +12,11 @@ const navi = $('.navi');
 let naviTop = intro.offset().top + intro.outerHeight();
 
 //set  initial position of .intro
-intro.css({ 'left': offsetImg1 + 30, 'top': naviHeight, 'font-size': widthImg1 / 20 });
+intro.css({ 'left': "10vw", 'top': naviHeight, 'font-size': widthImg1 / 20 });
 
 //set initial position of navigation
-navi.css('margin-left', offsetImg1);
-navi.css('width', widthImg1);
+// navi.css('margin-left', offsetImg1);
+// navi.css('width', widthImg1);
 
 //set initial font for resize
 aboutMe.css('font-size', '40px');
@@ -72,23 +72,23 @@ function showFoot() {
         $('.img4').attr('src', 'img/img4.jpg');
     }
 
-    offsetImg1 = $('.image1').offset().left;
+    // offsetImg1 = $('.image1').offset().left; =0
     const currentScroll = $(window).scrollTop();
     const offsetImg3 = $('.image3').offset().top;
     const heightImg2 = $('.image2').height();
-    const widthImg1 = $('.image1').width();
+    // const widthImg1 = $('.image1').width();
 
     //set position of .intro and font-size
     const naviHeight = $('.navi').outerHeight() + 60;
-    intro.css({ 'left': offsetImg1 + 30, 'top': naviHeight, 'font-size': widthImg1 / 20 });
+    intro.css({ 'left': '10vw', 'top': naviHeight, 'font-size': widthImg1 / 20 });
 
 
-    $('.foot').css('margin-left', offsetImg1);
+    // $('.foot').css('margin-left', offsetImg1);
 
 
     //set current position of navi
-    navi.css('margin-left', offsetImg1);
-    navi.css('width', $(window).width() - 2 * offsetImg1);
+    // navi.css('margin-left', offsetImg1);
+    // navi.css('width', $(window).width() - 2 * offsetImg1);
 
     //fade-out intro
     intro.css('opacity', 1 - $(window).scrollTop() / 500);
