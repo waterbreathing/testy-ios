@@ -11,7 +11,7 @@ const navi = $('.navi');
 let naviTop = intro.offset().top + intro.outerHeight();
 
 //set  initial position of .intro
-intro.css({ 'left': "10vw", 'top': naviHeight, 'font-size': widthImg1 / 25 });
+intro.css({ 'left': "10vw", 'top': naviHeight, 'font-size': widthImg1 / 20 });
 
 
 //set initial font for resize
@@ -77,7 +77,7 @@ function showFoot() {
 
     //set position of .intro and font-size
     const naviHeight = $('.navi').outerHeight() + 60;
-    intro.css({ 'left': '10vw', 'top': naviHeight, 'font-size': widthImg1 / 25 });
+    intro.css({ 'left': '10vw', 'top': naviHeight, 'font-size': widthImg1 / 20 });
 
 
     //fade-out intro
