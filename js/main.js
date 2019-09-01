@@ -1,10 +1,9 @@
 
-let offsetImg1 = $('.image1').offset().left; //skasuj to
+// let offsetImg1 = $('.image1').offset().left; //skasuj to
 const widthImg1 = $('.image1').width();
 let windowWidth = $(window).width();
 const naviHeight = $('.navi').outerHeight() + 60;
 
-//get some elements
 const intro = $('.intro');
 const aboutMe = $('#aboutMe');
 const navi = $('.navi');
@@ -12,11 +11,8 @@ const navi = $('.navi');
 let naviTop = intro.offset().top + intro.outerHeight();
 
 //set  initial position of .intro
-intro.css({ 'left': "10vw", 'top': naviHeight, 'font-size': widthImg1 / 20 });
+intro.css({ 'left': "10vw", 'top': naviHeight, 'font-size': widthImg1 / 25 });
 
-//set initial position of navigation
-// navi.css('margin-left', offsetImg1);
-// navi.css('width', widthImg1);
 
 //set initial font for resize
 aboutMe.css('font-size', '40px');
@@ -34,11 +30,12 @@ function placeArrow() {
 
     const topPosition = intro.outerHeight();
     const leftPosition = intro.outerWidth();
+    const arrow = $('.fa-angle-double-down');
 
 
-    $('.fa-angle-double-down').css('width', $('.fa-angle-double-down').height());
-    $('.fa-angle-double-down').css('top', topPosition - ($('.fa-angle-double-down').height()) / 2);
-    $('.fa-angle-double-down').css('left', leftPosition - ($('.fa-angle-double-down').width()) / 2);
+    arrow.css('width', $('.fa-angle-double-down').height());
+    arrow.css('top', topPosition - ($('.fa-angle-double-down').height()) / 2);
+    arrow.css('left', leftPosition - ($('.fa-angle-double-down').width()) / 2);
 
 }
 
@@ -76,19 +73,12 @@ function showFoot() {
     const currentScroll = $(window).scrollTop();
     const offsetImg3 = $('.image3').offset().top;
     const heightImg2 = $('.image2').height();
-    // const widthImg1 = $('.image1').width();
+    const widthImg1 = $('.image1').width();
 
     //set position of .intro and font-size
     const naviHeight = $('.navi').outerHeight() + 60;
-    intro.css({ 'left': '10vw', 'top': naviHeight, 'font-size': widthImg1 / 20 });
+    intro.css({ 'left': '10vw', 'top': naviHeight, 'font-size': widthImg1 / 25 });
 
-
-    // $('.foot').css('margin-left', offsetImg1);
-
-
-    //set current position of navi
-    // navi.css('margin-left', offsetImg1);
-    // navi.css('width', $(window).width() - 2 * offsetImg1);
 
     //fade-out intro
     intro.css('opacity', 1 - $(window).scrollTop() / 500);
